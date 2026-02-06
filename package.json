@@ -1,0 +1,27 @@
+{
+  "name": "contact-manager",
+  "version": "0.1.0",
+  "description": "Minimal contact manager backend service (in-memory) with REST API.",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.0"
+  }
+}
