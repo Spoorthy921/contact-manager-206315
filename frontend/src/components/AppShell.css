@@ -1,0 +1,78 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.appShell__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appShell__brand {
+  display: grid;
+  gap: 4px;
+}
+
+.appShell__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.appShell__subtitle {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.appShell__nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.appShell__navBtn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.appShell__navBtn:hover {
+  border-color: var(--borderStrong);
+}
+
+.appShell__navBtn.isActive {
+  background: var(--primarySoft);
+  border-color: var(--primary);
+}
+
+.appShell__main {
+  flex: 1;
+  padding: 20px 16px;
+}
+
+.appShell__content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.appShell__footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  padding: 14px 16px;
+  font-size: 12px;
+}

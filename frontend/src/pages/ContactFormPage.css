@@ -1,0 +1,58 @@
+.formPage {
+  display: grid;
+  gap: 16px;
+}
+
+.formPage__header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formPage__title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.formPage__subtitle {
+  margin: 6px 0 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.formPage__state {
+  padding: 14px;
+}
+
+.formPage__state.isError {
+  border-color: rgba(220, 38, 38, 0.35);
+  background: rgba(220, 38, 38, 0.06);
+  color: #991b1b;
+}
+
+.formPage__card {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.formGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

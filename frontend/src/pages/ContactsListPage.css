@@ -1,0 +1,107 @@
+.contactsPage {
+  display: grid;
+  gap: 16px;
+}
+
+.contactsPage__header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contactsPage__title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.contactsPage__subtitle {
+  margin: 6px 0 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contactsPage__controls {
+  display: grid;
+  gap: 12px;
+}
+
+.contactsPage__state {
+  padding: 14px;
+}
+
+.contactsPage__state.isError {
+  border-color: rgba(220, 38, 38, 0.35);
+  background: rgba(220, 38, 38, 0.06);
+  color: #991b1b;
+}
+
+.contactsPage__listCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.contactsPage__empty {
+  padding: 18px;
+}
+
+.contactsPage__emptyTitle {
+  font-weight: 700;
+}
+
+.contactsPage__emptyBody {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.tableWrap {
+  width: 100%;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table thead th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  background: rgba(17, 24, 39, 0.02);
+}
+
+.table__primaryCell {
+  font-weight: 700;
+}
+
+.table__actionsHeader,
+.table__actionsCell {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.table__actionsCell {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .table th:nth-child(2),
+  .table td:nth-child(2) {
+    display: none;
+  }
+}
